@@ -89,7 +89,7 @@ function App() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'output.in';
+    a.download = 'salidaGlifos.txt';
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -112,7 +112,7 @@ function App() {
             <span>
               Cargar archivo
             </span>
-            <input type="file" accept=".in" onChange={handleLoadFromFile} hidden/>
+            <input type="file" accept=".txt" onChange={handleLoadFromFile} hidden/>
           </label>
         </div>
         

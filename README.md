@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# Traductor de Números a Glifos
+Este proyecto es una aplicación web desarrollada con el framework **React** que permite convertir entradas de un archivo `.in` o propias del usuario, para traducirlas bajo el sistema de glifos de Aethelgard, una nación antigua olvidada, y exportar estas traducciones en un archivo `salidaGlifos.txt`.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Autor del proyecto
+Francisco Adrianza. C.I. V-29.928.573
+Estudiante de ingeniería informática de la Universidad Nacional Experimental del Táchira (UNET).
 
-Currently, two official plugins are available:
+## Enlace de visualizacion en la nube
+El proyecto está actualmente hosteado en netlify, en el siguiente enlace: `https://words-counter-unet.netlify.app/`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ¿Qué hace la app?
 
-## Expanding the ESLint configuration
+- Entrada de números manual mediante un input.
+- Carga masiva de números desde archivo `.txt`.
+- Verificación de errores en las entradas de la carga masiva. 
+- Barra de leyenda con los símbolos disponibles.
+- Visualización paralela de entradas y salidas (glifos).
+- Opción de eliminar todos los registros y cargar un archivo nuevamente.
+- Opción de descargar un archivo `salidaGlifos.txt` con la lista de numeros traducidos por la aplicación.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ¿Cómo ejecutar localmente el proyecto?
+1. Debes instalar los modulos de node, asi que debe tener instalado node. Enlace para instalar node: `https://nodejs.org/en`.
+2. Teniendo node instalado, ubicarse con bash en la raiz del proyecto y ejecutar el comando `yarn`.
+3. Luego de instalar los modulos, ejecutar el comando `yarn dev`.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Colaboraciones
+Para sugerir modificaciones al proyecto, te invito a solicitar un pull request en mi repositorio en github!!: `https://github.com/adri4nza/p1-words-counter-programacion-2`
