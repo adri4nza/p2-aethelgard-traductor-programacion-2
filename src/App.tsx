@@ -106,7 +106,12 @@ function App() {
       <div className="controls-container">
         <div className="group-1">
           <label className="btn file-input">
-            Cargar archivo
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+             <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" />
+            </svg>
+            <span>
+              Cargar archivo
+            </span>
             <input type="file" accept=".in" onChange={handleLoadFromFile} hidden/>
           </label>
         </div>
@@ -119,7 +124,14 @@ function App() {
             placeholder="Ingresa un número a convertir..."
             onKeyDown={handleKeyDown}
           />
-          <button className="btn add-button" onClick={handleAddEntry}>Agregar</button>
+          <button className="btn add-button" onClick={handleAddEntry}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+            <span>
+              Agregar
+            </span>
+          </button>
         </div>
       </div>
 
@@ -141,7 +153,7 @@ function App() {
           <ul>
             {entries.map((entry, index) => (
               <li key={index}>
-                <strong>{entry}</strong>
+                <strong>{index+1}.</strong> {entry}
               </li>
             ))}
           </ul>
@@ -154,7 +166,7 @@ function App() {
             {outputs.map((output, index) => (
               <li key={index} className={output.success ? "success" : "error"}>
                 <span>
-                  <strong>{output.success ? output.salida : output.salida}</strong>
+                  <strong style={{color: 'black'}}>{index+1}. </strong> {output.success ? output.salida : output.salida}
                 </span>
                 <button className="delete-button" onClick={() => handleDeleteEntry(index)}>
                   Eliminar
