@@ -20,8 +20,9 @@ El proyecto está actualmente hosteado en netlify, en el siguiente enlace: `http
 
 ## ¿Cómo ejecutar localmente el proyecto?
 1. Debes instalar los modulos de node, asi que debe tener instalado node. Enlace para instalar node: `https://nodejs.org/en`.
-2. Teniendo node instalado, ubicarse con bash en la raiz del proyecto y ejecutar el comando `yarn`.
-3. Luego de instalar los modulos, ejecutar el comando `yarn dev`.
+2. Instalar Yarn con el comando npm install --global yarn, para esto ubicarse en la raiz del computador con la terminal. Mas detalles de instalacion aqui. `https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable`.
+3. Teniendo node instalado, ubicarse con bash en la raiz del proyecto y ejecutar el comando `yarn`.
+4. Luego de instalar los modulos, ejecutar el comando `yarn dev`.
 
 ## Colaboraciones
 Para sugerir modificaciones al proyecto, te invito a solicitar un pull request en mi repositorio en github!!: `https://github.com/adri4nza/p2-aethelgard-traductor-programacion-2`
